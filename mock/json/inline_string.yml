@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Generate JSON data using hard-coded inline string.
+  description: Builds a JSON payload containing project information, including project details, team members, deadlines, and budgets. This method involves hardcoding the entire JSON data as a single string and then parsing this string into individual JSON records and fields using PostgreSQL's string manipulation and JSON functions. The JSON string is treated as a bulk text blob that needs to be split and structured within the SQL query.
+  tags:
+    - mock
+    - json
+    - filtering
+code: sql
+codeFile: inline_string.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

@@ -1,0 +1,15 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Generate CSV data.
+  description: Builds a CSV payload containing project information, including project details, team members, deadlines, and budgets.
+  tags:
+    - mock
+    - csv
+code: sql
+codeFile: inline_string.sql
+format: csv
+security:
+  public: true
+computeClass: normal
+enabled: true

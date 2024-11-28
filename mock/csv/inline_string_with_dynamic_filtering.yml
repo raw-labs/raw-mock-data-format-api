@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Generate CSV data using hard-coded inline string.
+  description: Builds a CSV payload containing project information, including project details, team members, deadlines, and budgets. This method involves hardcoding the entire CSV data as a single string, including all records and fields, and then parsing this string into individual records and columns using PostgreSQL's string manipulation functions. The CSV data is treated as a single text blob that needs to be split and structured within the query. Dynamic filtering is supported using a query parameter.
+  tags:
+    - mock
+    - csv
+    - filtering
+code: sql
+codeFile: inline_string_with_dynamic_filtering.sql
+format: csv
+security:
+  public: true
+computeClass: normal
+enabled: true
