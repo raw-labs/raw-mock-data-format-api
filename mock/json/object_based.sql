@@ -1,7 +1,3 @@
--- @param name Name
--- @type name varchar
--- @default name NULL
-
 WITH base AS (
     SELECT json_array_elements(
         json_build_array(
