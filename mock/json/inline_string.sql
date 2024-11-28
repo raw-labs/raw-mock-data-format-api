@@ -1,7 +1,3 @@
--- @param name Name
--- @type name varchar
--- @default name NULL
-
 WITH base AS (
     SELECT json_array_elements('[
     {
@@ -69,4 +65,3 @@ SELECT
     data -> 'team' as team,
     data -> 'budget' as budget  
 FROM base
-WHERE :name IS NULL OR :name IN (SELECT value ->> 'name' FROM json_array_elements(data -> 'team'))
