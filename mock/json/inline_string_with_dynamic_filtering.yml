@@ -1,7 +1,7 @@
 raw: "0.10"
 endpoint: GET
 metadata:
-  title: Generate JSON data using hard-coded inline string.
+  title: Generate JSON data using hard-coded inline string and filter by team member name.
   description: Builds a JSON payload containing project information, including project details, team members, deadlines and budgets, based on the provided team member name. This method involves hardcoding the entire JSON data as a single string and then parsing this string into individual JSON records and fields using PostgreSQL's string manipulation and JSON functions. The JSON string is treated as a bulk text blob that needs to be split and structured within the SQL query. Dynamic filtering is supported using a query parameter.
   tags:
     - mock

@@ -1,7 +1,7 @@
 raw: "0.10"
 endpoint: GET
 metadata:
-  title: Generate CSV data using multiple SELECT statements combined with UNION or UNION ALL.
+  title: Generate CSV data using multiple SELECT statements combined with UNION or UNION ALL and filter by team member name.
   description: Builds a CSV payload containing project information, including project details, team members, deadlines, and budgets. This method involves explicitly defining each CSV row using multiple SELECT statements combined with UNION or UNION ALL. Each SELECT statement represents a single record in the CSV, with fields directly assigned hardcoded values. Dynamic filtering is supported using a query parameter.
   tags:
     - mock

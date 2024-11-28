@@ -1,7 +1,7 @@
 raw: "0.10"
 endpoint: GET
 metadata:
-  title: Generate JSON data using hard-coded inline string.
+  title: Generate JSON data programmatically using PostgreSQL's JSON functions.
   description: Builds a JSON payload containing project information, including project details, team members, deadlines, and budgets. This method involves programmatically building JSON structures using PostgreSQL's JSON functions such as json_build_object and json_build_array. Each JSON object and array is explicitly constructed within the SQL query, allowing for a structured and hierarchical representation of the data.
   tags:
     - mock
