@@ -1,4 +1,4 @@
-# RAW Mock Data API Template
+# RAW Mock Data Format API Template
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@
 
 ### Description
 
-This repository provides a **Mock Data API Template** using the RAW Labs platform. It demonstrates how to create API endpoints that return mock JSON and CSV responses using SQL queries. This template serves as a starting point for building APIs that can be used for prototyping, testing, or demonstrating functionality without requiring a live data source.
+This repository provides a **Mock Data Format API Template** using the RAW Labs platform. It demonstrates how to create API endpoints that return mock JSON and CSV responses using SQL queries. This template serves as a starting point for building APIs that can be used for prototyping, testing, or demonstrating functionality without requiring a live data source.
 
 ### How It Works
 
@@ -35,7 +35,7 @@ The RAW Labs platform allows you to create APIs by writing SQL queries that gene
 ## Getting Started
 
 1. **Deploy the API:**
-   - Visit the [Mock Data API Starter Template](https://www.raw-labs.com/templates/mock-data-api-starter).
+   - Visit the [Mock Data Format API Starter Template](https://www.raw-labs.com/templates/mock-data-format-api-starter).
    - Click the **"Get Started"** button to deploy the template.
    - If you don’t have a RAW account, you’ll be prompted to create one for free. Deployment and account setup are seamless—just one click away!
 
@@ -157,7 +157,7 @@ To document parameters, enforce types, or set default values, add metadata at th
 
 ## Next Steps
 
-Visit the [Mock Data API Starter Template](https://www.raw-labs.com/templates/mock-data-api-starter), deploy this template, and get started using RAW.
+Visit the [Mock Data Format API Starter Template](https://www.raw-labs.com/templates/mock-data-format-api-starter), deploy this template, and get started using RAW.
 
 When you create your RAW account, you will be able to view and run these endpoints in the RAW catalog, as well as quickly modify these endpoints or create new ones in the RAW workspace, in our easy-to-use web IDE.
 
