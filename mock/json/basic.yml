@@ -8,7 +8,7 @@ metadata:
     - json
     - filtering
 code: sql
-codeFile: inline_string.sql
+codeFile: basic.sql
 format: json
 security:
   public: true

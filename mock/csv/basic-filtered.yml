@@ -8,7 +8,7 @@ metadata:
     - csv
     - filtering
 code: sql
-codeFile: inline_string_with_dynamic_filtering.sql
+codeFile: basic-filtered.sql
 format: csv
 security:
   public: true

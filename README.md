@@ -65,79 +65,79 @@ The following endpoints are available:
 
 ### **CSV Endpoints**
 
-1. **GET `/mock/csv/inline_string`**
+1. **GET `/mock/csv/basic`**
 
    - **Description**: Returns mock CSV data parsed from an inline string.
    - **Query Parameters**: None.
    - **Source Code**:
-     - SQL Query: [/mock/csv/inline_string.sql](./mock/csv/inline_string.sql)
-     - Endpoint Definition: [/mock/csv/inline_string.yml](./mock/csv/inline_string.yml)
+     - SQL Query: [/mock/csv/basic.sql](./mock/csv/basic.sql)
+     - Endpoint Definition: [/mock/csv/basic.yml](./mock/csv/basic.yml)
 
-2. **GET `/mock/csv/inline_string_with_dynamic_filtering`**
+2. **GET `/mock/csv/basic-filtered`**
 
    - **Description**: Returns mock CSV data with dynamic filtering based on the `name` parameter.
    - **Query Parameters**:
      - `name` (optional): Filter results by team member name.
    - **Source Code**:
-     - SQL Query: [/mock/csv/inline_string_with_dynamic_filtering.sql](./mock/csv/inline_string_with_dynamic_filtering.sql)
-     - Endpoint Definition: [/mock/csv/inline_string_with_dynamic_filtering.yml](./mock/csv/inline_string_with_dynamic_filtering.yml)
+     - SQL Query: [/mock/csv/basic-filtered.sql](./mock/csv/basic-filtered.sql)
+     - Endpoint Definition: [/mock/csv/basic-filtered.yml](./mock/csv/basic-filtered.yml)
 
-3. **GET `/mock/csv/union_rows`**
+3. **GET `/mock/csv/union`**
 
    - **Description**: Returns mock CSV data constructed using SQL `UNION` statements.
    - **Query Parameters**: None.
    - **Source Code**:
-     - SQL Query: [/mock/csv/union_rows.sql](./mock/csv/union_rows.sql)
-     - Endpoint Definition: [/mock/csv/union_rows.yml](./mock/csv/union_rows.yml)
+     - SQL Query: [/mock/csv/union.sql](./mock/csv/union.sql)
+     - Endpoint Definition: [/mock/csv/union.yml](./mock/csv/union.yml)
 
-4. **GET `/mock/csv/union_rows_with_dynamic_filtering`**
+4. **GET `/mock/csv/union-filtered`**
 
    - **Description**: Returns mock CSV data constructed using SQL `UNION` statements, with dynamic filtering based on the `name` parameter.
    - **Query Parameters**:
      - `name` (optional): Filter results by team member name.
    - **Source Code**:
-     - SQL Query: [/mock/csv/union_rows_with_dynamic_filtering.sql](./mock/csv/union_rows_with_dynamic_filtering.sql)
-     - Endpoint Definition: [/mock/csv/union_rows_with_dynamic_filtering.yml](./mock/csv/union_rows_with_dynamic_filtering.yml)
+     - SQL Query: [/mock/csv/union-filtered.sql](./mock/csv/union-filtered.sql)
+     - Endpoint Definition: [/mock/csv/union-filtered.yml](./mock/csv/union-filtered.yml)
 
 ### **JSON Endpoints**
 
-5. **GET `/mock/json/inline_string`**
+5. **GET `/mock/json/basic`**
 
    - **Description**: Returns mock JSON data parsed from an inline string.
    - **Query Parameters**: None.
    - **Source Code**:
-     - SQL Query: [/mock/json/inline_string.sql](./mock/json/inline_string.sql)
-     - Endpoint Definition: [/mock/json/inline_string.yml](./mock/json/inline_string.yml)
+     - SQL Query: [/mock/json/basic.sql](./mock/json/basic.sql)
+     - Endpoint Definition: [/mock/json/basic.yml](./mock/json/basic.yml)
 
-6. **GET `/mock/json/inline_string_with_dynamic_filtering`**
+6. **GET `/mock/json/basic-filtered`**
 
    - **Description**: Returns mock JSON data parsed from an inline string, with dynamic filtering based on the `name` parameter.
    - **Query Parameters**:
      - `name` (optional): Filter results by team member name.
    - **Source Code**:
-     - SQL Query: [/mock/json/inline_string_with_dynamic_filtering.sql](./mock/json/inline_string_with_dynamic_filtering.sql)
-     - Endpoint Definition: [/mock/json/inline_string_with_dynamic_filtering.yml](./mock/json/inline_string_with_dynamic_filtering.yml)
+     - SQL Query: [/mock/json/basic-filtered.sql](./mock/json/basic-filtered.sql)
+     - Endpoint Definition: [/mock/json/basic-filtered.yml](./mock/json/basic-filtered.yml)
 
-7. **GET `/mock/json/object_based`**
+7. **GET `/mock/json/object`**
 
    - **Description**: Returns mock JSON data constructed using SQL JSON functions.
    - **Query Parameters**: None.
    - **Source Code**:
-     - SQL Query: [/mock/json/object_based.sql](./mock/json/object_based.sql)
-     - Endpoint Definition: [/mock/json/object_based.yml](./mock/json/object_based.yml)
+     - SQL Query: [/mock/json/object.sql](./mock/json/object.sql)
+     - Endpoint Definition: [/mock/json/object.yml](./mock/json/object.yml)
 
-8. **GET `/mock/json/object_based_with_dynamic_filtering`**
+8. **GET `/mock/json/object-filtered`**
 
    - **Description**: Returns mock JSON data constructed using SQL JSON functions, with dynamic filtering based on the `name` parameter.
    - **Query Parameters**:
      - `name` (optional): Filter results by team member name.
    - **Source Code**:
-     - SQL Query: [/mock/json/object_based_with_dynamic_filtering.sql](./mock/json/object_based_with_dynamic_filtering.sql)
-     - Endpoint Definition: [/mock/json/object_based_with_dynamic_filtering.yml](./mock/json/object_based_with_dynamic_filtering.yml)
+     - SQL Query: [/mock/json/object-filtered.sql](./mock/json/object-filtered.sql)
+     - Endpoint Definition: [/mock/json/object-filtered.yml](./mock/json/object-filtered.yml)
 
 ## Short Intro to RAW APIs
 
-In RAW, APIs consist of two parts: a YAML file for endpoint configuration and a SQL file for the query logic. The YAML file path defines the API’s endpoint. For example, `/mock/json/inline_string.yml` corresponds to the API path `/mock/json/inline_string`.
+In RAW, APIs consist of two parts: a YAML file for endpoint configuration and a SQL file for the query logic. The YAML file path defines the API’s endpoint. For example, `/mock/json/basic.yml` corresponds to the API path `/mock/json/basic`.
 
 SQL queries can include dynamic parameters using the `:<variable_name>` syntax. For instance:
 

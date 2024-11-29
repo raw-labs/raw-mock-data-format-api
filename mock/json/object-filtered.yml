@@ -8,7 +8,7 @@ metadata:
     - json
     - filtering
 code: sql
-codeFile: object_based_with_dynamic_filtering.sql
+codeFile: object-filtered.sql
 format: json
 security:
   public: true
